@@ -7,3 +7,4 @@ services:
       - /data/youtrack/backup/:/opt/youtrack/backup/
     ports:
       - 7400:80
+    restart: always
