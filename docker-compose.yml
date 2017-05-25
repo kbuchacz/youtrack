@@ -1,0 +1,9 @@
+version: '2'
+services:
+  youtrack:
+    image: uniplug/youtrack:2017.2.33063
+    volumes:
+      - /data/youtrack/data/:/opt/youtrack/data/
+      - /data/youtrack/backup/:/opt/youtrack/backup/
+    ports:
+      - 7400:80
