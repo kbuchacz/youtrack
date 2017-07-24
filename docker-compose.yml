@@ -3,8 +3,8 @@ services:
   youtrack:
     image: uniplug/youtrack:2017.2.33063
     volumes:
-      - /data/youtrack/data/:/opt/youtrack/data/
-      - /data/youtrack/backup/:/opt/youtrack/backup/
+      - /home/youtrack/data/:/opt/youtrack/data/
+      - /home/youtrack/teamsysdata-backup/:/opt/youtrack/backup/
     ports:
       - 7700:80
     restart: always
